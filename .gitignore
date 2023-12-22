@@ -6,6 +6,7 @@ node_modules
 /.svelte-kit/vercel-tmp
 /.svelte-kit/types/route_meta*
 /package
+/.vercel
 .env
 .env.*
 !.env.example
