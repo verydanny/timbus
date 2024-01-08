@@ -1,14 +1,12 @@
 .DS_Store
 node_modules
 /build
-/.svelte-kit/generated
-/.svelte-kit/output
-/.svelte-kit/vercel-tmp
-/.svelte-kit/types/route_meta*
+/.svelte-kit
 /package
-/.vercel
 .env
 .env.*
 !.env.example
+.vercel
+.output
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*

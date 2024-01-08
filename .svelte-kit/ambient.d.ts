@@ -27,6 +27,7 @@
  */
 declare module '$env/static/private' {
 	export const BUN_INSTALL: string;
+	export const BUN_WHICH_IGNORE_CWD: string;
 	export const COLORTERM: string;
 	export const COMMAND_MODE: string;
 	export const DVM_DIR: string;
@@ -35,6 +36,7 @@ declare module '$env/static/private' {
 	export const HOMEBREW_PREFIX: string;
 	export const HOMEBREW_REPOSITORY: string;
 	export const INFOPATH: string;
+	export const INIT_CWD: string;
 	export const KITTY_INSTALLATION_DIR: string;
 	export const KITTY_PID: string;
 	export const KITTY_PUBLIC_KEY: string;
@@ -65,14 +67,13 @@ declare module '$env/static/private' {
 	export const __CFBundleIdentifier: string;
 	export const __CF_USER_TEXT_ENCODING: string;
 	export const npm_config_local_prefix: string;
+	export const npm_config_node_gyp: string;
 	export const npm_config_user_agent: string;
 	export const npm_execpath: string;
-	export const npm_lifecycle_event: string;
 	export const npm_node_execpath: string;
 	export const npm_package_json: string;
 	export const npm_package_name: string;
 	export const npm_package_version: string;
-	export const NODE_ENV: string;
 }
 
 /**
@@ -105,6 +106,7 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		BUN_INSTALL: string;
+		BUN_WHICH_IGNORE_CWD: string;
 		COLORTERM: string;
 		COMMAND_MODE: string;
 		DVM_DIR: string;
@@ -113,6 +115,7 @@ declare module '$env/dynamic/private' {
 		HOMEBREW_PREFIX: string;
 		HOMEBREW_REPOSITORY: string;
 		INFOPATH: string;
+		INIT_CWD: string;
 		KITTY_INSTALLATION_DIR: string;
 		KITTY_PID: string;
 		KITTY_PUBLIC_KEY: string;
@@ -143,14 +146,13 @@ declare module '$env/dynamic/private' {
 		__CFBundleIdentifier: string;
 		__CF_USER_TEXT_ENCODING: string;
 		npm_config_local_prefix: string;
+		npm_config_node_gyp: string;
 		npm_config_user_agent: string;
 		npm_execpath: string;
-		npm_lifecycle_event: string;
 		npm_node_execpath: string;
 		npm_package_json: string;
 		npm_package_name: string;
 		npm_package_version: string;
-		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
 	}
