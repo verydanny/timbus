@@ -29,6 +29,7 @@ declare module '$env/static/private' {
 	export const BUN_INSTALL: string;
 	export const COLORTERM: string;
 	export const COMMAND_MODE: string;
+	export const DVM_DIR: string;
 	export const HOME: string;
 	export const HOMEBREW_CELLAR: string;
 	export const HOMEBREW_PREFIX: string;
@@ -106,6 +107,7 @@ declare module '$env/dynamic/private' {
 		BUN_INSTALL: string;
 		COLORTERM: string;
 		COMMAND_MODE: string;
+		DVM_DIR: string;
 		HOME: string;
 		HOMEBREW_CELLAR: string;
 		HOMEBREW_PREFIX: string;
