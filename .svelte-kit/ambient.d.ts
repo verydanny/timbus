@@ -44,6 +44,7 @@ declare module '$env/static/private' {
 	export const LaunchInstanceID: string;
 	export const MANPATH: string;
 	export const NODE: string;
+	export const NODE_ENV: string;
 	export const OLDPWD: string;
 	export const PATH: string;
 	export const PNPM_HOME: string;
@@ -72,7 +73,6 @@ declare module '$env/static/private' {
 	export const npm_package_json: string;
 	export const npm_package_name: string;
 	export const npm_package_version: string;
-	export const NODE_ENV: string;
 }
 
 /**
@@ -122,6 +122,7 @@ declare module '$env/dynamic/private' {
 		LaunchInstanceID: string;
 		MANPATH: string;
 		NODE: string;
+		NODE_ENV: string;
 		OLDPWD: string;
 		PATH: string;
 		PNPM_HOME: string;
@@ -150,7 +151,6 @@ declare module '$env/dynamic/private' {
 		npm_package_json: string;
 		npm_package_name: string;
 		npm_package_version: string;
-		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
 	}

@@ -1,14 +1,12 @@
 import { sveltekit } from '@sveltejs/kit/vite'
-// import { purgeCss } from 'vite-plugin-tailwind-purgecss'
-import purgeCss from '@mojojoejo/vite-plugin-purgecss'
+import { purgeCss } from 'vite-plugin-tailwind-purgecss'
+// import purgeCss from '@mojojoejo/vite-plugin-purgecss'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [
     sveltekit(),
-    ...(process.env.NODE_ENV === 'production' ?
-      [purgeCss({ variables: true })]
-    : []),
+    ...(process.env.NODE_ENV === 'production' ? [purgeCss()] : []),
   ],
   build: {
     target: 'esnext',
