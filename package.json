@@ -37,8 +37,7 @@
     "vite": "^5.0.11"
   },
   "dependencies": {
-    "@elysiajs/eden": "0.8.0",
-    "timbus-backend": "link:timbus-backend"
+    "@elysiajs/eden": "0.8.0"
   },
   "type": "module"
 }
