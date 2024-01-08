@@ -39,5 +39,6 @@
   "dependencies": {
     "@elysiajs/eden": "0.8.0"
   },
+  "packageManager": "bun@1.0.21",
   "type": "module"
 }
