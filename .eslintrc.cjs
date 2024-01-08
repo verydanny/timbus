@@ -6,20 +6,20 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:svelte/recommended',
     'plugin:prettier/recommended',
+    'prettier',
     'plugin:svelte/prettier',
   ],
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 2024,
+    ecmaVersion: 2020,
     extraFileExtensions: ['.svelte'],
   },
   env: {
     browser: true,
     es2017: true,
     node: true,
-    es2024: true,
   },
   overrides: [
     {
